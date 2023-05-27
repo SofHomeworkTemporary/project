@@ -5,6 +5,8 @@ import com.javarush.jira.common.model.TimestampEntry;
 import com.javarush.jira.common.util.validation.Code;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -16,6 +18,8 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
+@Builder
+@AllArgsConstructor
 public class UserBelong extends TimestampEntry {
 
     // no FK, manual check
